@@ -1,0 +1,127 @@
+html,body, input {
+    font-family: sans-serif;
+    
+}
+.header {
+    background: gray;
+    padding: 10px;
+    color: black;
+    border: 2px solid black;
+} 
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contents{
+    width: 50%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+   
+}
+.anakContent{
+    border: 1px solid black;
+    border-width:1px;
+    padding-bottom: 2%;
+    margin-bottom: 1%;
+}
+.form-element{
+    margin: 8px;
+    align-items: left;
+}
+#dataBuku{
+    height: 50%;
+    margin-top: 1%;
+}
+#belumSelesai{
+    height: 50%;
+    margin-top: 1%;
+}
+#selesai{
+    margin-top: 1%;
+    height: 50%;
+}
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        width: 20%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+}
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+.item > .inner h2 {
+    margin-bottom: unset;
+}
+.item > .inner p {
+    margin-top: 5px;
+}
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+.cek {
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+.cek:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
+.cek:focus, .trash-button {
+    outline: none;
+}
+.hapus{
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.hapus:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo{
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
