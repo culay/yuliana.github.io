@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Bookshelf App</title>
+</head>
+<body bgcolor = "#f2f2f2" align="center">
+	<div class="wrapper" align="center">
+		<div class="contents">
+			<div class="header">
+				<h1>Bookshelf App</h1>
+			</div>
+	    	<div class="anakContent" id="dataBuku" >
+	            	<h4 align="center"><b>Masukkan Buku Baru</b></h4>
+	                <form id="formDataBuku">
+	                    <div class="form-element" id="fieldJudul">
+	                        <label for="judul">Judul</label><br>
+	                        <input id="inputJudul" type="text" name="judul" placeholder="Masukkan Judul"  maxlength="30"><br>
+	                    </div>
+	                    <div class="form-element" id="fieldPenulis">   
+	                  		<label for="penulis">Penulis</label><br>
+	                        <input id="inputPenulis" type="text" name="penulis" placeholder="Masukkan Nama Penulis"  maxlength="30"><br>
+	                    </div>
+	                    <div class="form-element" id="fieldTahun">
+	                        <label for="tahun">Tahun</label><br>
+	                        <input id="inputTahun" type="text" name="tahun" placeholder="Masukkan Tahun"  maxlength="10"><br>
+	                    </div>
+	                    <div class="input_inline">
+			                <label for="inputBookIsComplete">Selesai dibaca</label>
+			                <input id="inputBukuSelesai" type="checkbox" name="checkbox">
+			            </div>
+	                    <div class="form-element">
+	                        <input id="submitButton" name="submit" type="submit" value="Submit">
+	                    </div>
+	                </form>
+	            </div>
+
+			    <div class="anakContent" class="list-item" id="belumSelesai">
+		          <h2 align="center">Belum selesai dibaca</h2>
+		            
+		        </div>
+
+			    <div class="anakContent" class="list-item" id="selesai">
+			        <h2 align="center">Selesai dibaca</h2>
+			          
+			    </div>
+		</div>
+	</div>
+
+	<script src="js/dataBook.js" type="text/javascript"></script>
+	<script src="js/domBook.js" type="text/javascript"></script>
+	<script src="js/scriptBook.js" type="text/javascript"></script>
+</body>
+</html>
